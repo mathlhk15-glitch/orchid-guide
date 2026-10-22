@@ -41,6 +41,22 @@ th,td{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top;t
 .footer{margin-top:30px;color:#6c786f;font-size:13px;text-align:center}
 @media(max-width:760px){.grid,.checklist{grid-template-columns:1fr}.kpi{grid-template-columns:1fr 1fr}.hero{padding:24px}th,td{font-size:14px;padding:10px 8px}}
 @media print{body{background:#fff}.wrap{max-width:none;padding:0}.hero,.card,table,.kpi div{box-shadow:none}a{color:#000;text-decoration:none}}
+
+/* Added photo gallery: source guide remains unchanged */
+.orchid-gallery{margin:35px 0;padding:26px;border:1px solid #cfe4d4;border-radius:22px;background:linear-gradient(135deg,#f2faee,#fff9f3)}
+.orchid-gallery h2{font-size:clamp(26px,4vw,36px);line-height:1.35;color:#204d35;margin:0 0 8px}
+.orchid-gallery .intro{font-size:18px;line-height:1.7;margin:0 0 19px}
+.guide-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.guide-tile{background:#fff;border:1px solid #d7e6d8;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #16452d10}
+.guide-tile:first-child{grid-column:1/-1}
+.guide-tile a{display:block;color:inherit;text-decoration:none}
+.guide-tile img{width:100%;height:auto;display:block}
+.guide-tile .tile-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;font-size:19px;font-weight:800;color:#254e33}
+.guide-tile .tile-foot span{font-size:14px;color:#2b6584}
+.video-row{margin-top:18px;padding:16px 18px;background:#fff;border-radius:14px;font-size:17px}
+.orchid-gallery .note{font-size:15px;color:#566e60;margin:12px 0 0}
+@media(max-width:760px){.orchid-gallery{padding:14px;margin:25px 0}.guide-list{grid-template-columns:1fr}.guide-tile:first-child{grid-column:auto}.guide-tile .tile-foot{font-size:18px}}
+@media print{.guide-tile{break-inside:avoid}.guide-list{display:block}.guide-tile{margin-bottom:16px}}
 </style>
 </head>
 <body>
@@ -49,7 +65,13 @@ th,td{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top;t
     <h1>난, 오래 건강하게 키우는 법</h1>
   </section>
 
-   <div class="callout">
+ <section class="orchid-gallery" id="orchid-images"><h2>🌸 호접란 그림 안내 5장</h2><p class="intro">그림을 누르면 사진이 크게 열립니다. 휴대전화에서는 아래로 넘기면서 순서대로 보세요.</p><div class="guide-list"><article class="guide-tile"><a href="images/guide-01.png" target="_blank" rel="noopener" aria-label="호접란 유리병 키우기 완벽 가이드 크게 보기"><img src="images/guide-01.png" alt="호접란 유리병 키우기 완벽 가이드" loading="lazy"><div class="tile-foot">호접란 유리병 키우기 완벽 가이드<span>사진 크게 보기 ↗</span></div></a></article>
+<article class="guide-tile"><a href="images/guide-02.png" target="_blank" rel="noopener" aria-label="① 유리병 준비와 심는 과정 크게 보기"><img src="images/guide-02.png" alt="① 유리병 준비와 심는 과정" loading="lazy"><div class="tile-foot">① 유리병 준비와 심는 과정<span>사진 크게 보기 ↗</span></div></a></article>
+<article class="guide-tile"><a href="images/guide-03.png" target="_blank" rel="noopener" aria-label="② 물 주는 방법 크게 보기"><img src="images/guide-03.png" alt="② 물 주는 방법" loading="lazy"><div class="tile-foot">② 물 주는 방법<span>사진 크게 보기 ↗</span></div></a></article>
+<article class="guide-tile"><a href="images/guide-04.png" target="_blank" rel="noopener" aria-label="③ 뿌리·비료·햇빛 관리 크게 보기"><img src="images/guide-04.png" alt="③ 뿌리·비료·햇빛 관리" loading="lazy"><div class="tile-foot">③ 뿌리·비료·햇빛 관리<span>사진 크게 보기 ↗</span></div></a></article>
+<article class="guide-tile"><a href="images/guide-05.png" target="_blank" rel="noopener" aria-label="④ 한 달 관리 일정과 영상 안내 크게 보기"><img src="images/guide-05.png" alt="④ 한 달 관리 일정과 영상 안내" loading="lazy"><div class="tile-foot">④ 한 달 관리 일정과 영상 안내<span>사진 크게 보기 ↗</span></div></a></article></div><div class="video-row">🎬 <a href="https://www.youtube.com/watch?v=6lDbXFGI1Pk" target="_blank" rel="noopener"><strong>정원지기 호접란 유리병 재배 영상 바로 보기 ↗</strong></a></div><p class="note">참고: 그림의 월 1회 물주기는 영상 제작자의 경험입니다. 실제로는 뿌리와 배지의 마른 상태를 확인하세요.</p></section>
+
+  <div class="callout">
     <b>핵심 원칙 4가지</b><br>
     ① 날짜를 정해 물 주지 말고 <b>배지의 마름 정도</b>로 판단합니다. ② 한 번 줄 때는 충분히 주고 <b>완전히 배수</b>합니다. ③ 장식 화분 안에 물이 고이지 않게 합니다. ④ 직사광선·에어컨/난방기 직풍을 피하고 <b>밝고 통풍되는 곳</b>에 둡니다.
   </div>
